@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Formulários HTML </title>
+</head>
+<body>
+	<header>
+		<h2>  Formulários HTML</h2>
+	</header>
+	<section> 
+		<hr>
+		<p> <h4>  Este formulário vai pedir seu nome e seu e-mail </h4>
+		</p>
+		<div> 
+			<form method="get" action="envio_dados.php">
+	    <input type="text" name="nome" placeholder="digite seu Nome aqui">
+	    <input type="e-mail" name="email" placeholder="Digite seu e-mail">
+	    <input type="submit" name="enviar" value="Enviar">    
+			</form>
+			<hr>
+		</div>
+		<hr>
+			<p> <h4> Este formulário vai mostrar um botão </h4> </p>
+		<div>
+			<form>
+				<input type="button" value="Clique aqui" onclick="msg()">
+			</form>
+
+			<script> 
+				function msg(){
+					alert (" Você clicou no botão !");
+
+				}
+			</script>
+		<hr>
+		</div>
+		<hr>
+			<p><h4> Este formulário vai criar caixas de seleção </h4></p>
+		<div>
+			<form>
+				<input type="checkbox" name="veiuculo1" value="bicicleta"> Eu tenho uma bicicleta <br>
+				<input type="checkbox" name="veiuculo2" value="carro"> Eu tenho um carro  <br>
+				<input type="checkbox" name="veiuculo3" value="moto"> Eu tenho uma moto <br>
+			</form>
+		<hr>
+		</div>
+		<hr>
+			<p><h4> Este formulário vai pergunta sua cor favorita </h4></p>
+		<div>
+			<form> Selecione sua cor preferida: <input type="color" name="favcor" value="#6A5ACD"> </form>
+		<hr>
+		</div>
+		<div>
+			<hr>
+				<form>
+					<p><h4> Este formulário vai pedir para você selecionar sua data de nascimento </h4></p>
+					Data de nascimento: <input type="date" name="nascimento">
+				</form>
+			<hr>
+		</div>
+		<div>
+			<hr>
+			<p><h4> Este formulário vai pedir para escolher um arquivo de seu computador </h4></p>
+			<form>
+				<input type="file" name="arquivos">
+			</form>
+			<br><br><br>
+
+			<!-- Para repetir seleção de multiplos arquivos -->
+
+			<form>
+				<input type="file" name="arquivos" multiple>
+			</form>
+			<hr>
+		</div>
+		<div>
+			<p><h4> Este formulário pede um número entre os dois valores </h4></p>
+			<form>
+  				  Quantidade (entre 1 e 5): <input type="number" name="quantidade" min="1" max="5">    
+			</form>
+			<hr>
+		</div>
+		</section>	
+
+</body>
+</html>
